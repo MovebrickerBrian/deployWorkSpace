@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            margin: 0;
+            padding: 0;
+            background: #F0F0F0;
+        }
+        .header {
+            /*position: fixed;*/
+            height: 3vw;
+            background: #68CDD5;
+            display: -webkit-flex;
+            justify-content: space-between;
+            vertical-align: middle;
+            line-height: 3vw;
+        }
+
+        .close {
+            position: absolute;
+            display: -webkit-flex;
+            left:1vw;
+            color: white;
+            text-align: left;
+            font-size: 1vw;}
+
+        .login{
+            position: absolute;
+            text-align: center;
+            left: 0;
+            right: 0;
+            color: white;
+            font-size: 1.5vw;
+        }
+
+        .register{
+            position: absolute;
+            display: -webkit-flex;
+            right: 1vw;
+            text-align: right;
+            color: white;
+            font-size: 1vw;
+        }
+        img {
+            margin: 0;
+            padding: 0.5%;
+            height: 2vw;
+            width: 2vw;
+            border-right: 0.1vw solid #b2b2b2;
+            background: #ffffff;
+            vertical-align: middle;
+        }
+        input {
+            margin: 0;
+            padding: 0;
+            width: 91.8%;
+            outline: none;
+            vertical-align: middle;
+            font-size: 2vw;
+            border: none;
+        }
+        .submit{
+            background-color: #68CDD5;
+            text-align: center;
+            width: 100vw;
+            height: 3vw;
+            border: none;
+            color:white;
+            font-size: 1.5vw;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <p class="close">关闭</p>
+    <p class="login">登录</p>
+    <p class="register">注册</p>
+</div>
+<div>
+    <form>
+        <img  src="image/iphone.png">
+        <input type="text" placeholder="请输入手机号"/></br>
+    </form>
+</div>
+<div>
+    <form>
+        <img  src="image/locked.png">
+        <input type="text" placeholder="请输入密码">
+    </form>
+</div>
+
+
+<form>
+    <input class="submit" value="登录"/></form>
+</form>
+</body>
+</html>
