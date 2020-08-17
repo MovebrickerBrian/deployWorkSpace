@@ -9,6 +9,9 @@
             margin: 0;
             padding: 0;
         }
+        div{
+            margin: 1vw 0;
+        }
         html {
             margin: 0;
             padding: 0;
@@ -49,32 +52,50 @@
             color: white;
             font-size: 1vw;
         }
+        .form {
+            background: #ffffff;
+            margin: 0;
+            padding: 1vw 0;
+        }
         img {
             margin: 0;
-            padding: 0.5%;
-            height: 2vw;
-            width: 2vw;
-            border-right: 0.1vw solid #b2b2b2;
+            padding:0.1vw 2vw;
+            height: 2.2vw;
+            width: 1.4vw;
+            border-right : 0.1vw solid #b2b2b2;
             background: #ffffff;
             vertical-align: middle;
         }
         input {
             margin: 0;
-            padding: 0;
+            padding: 0 1vw;
+            height: 2.2vw;
             width: 91.8%;
-            outline: none;
+            /*outline: none;*/
             vertical-align: middle;
-            font-size: 2vw;
+            font-size: 1.2vw;
             border: none;
         }
         .submit{
             background-color: #68CDD5;
             text-align: center;
-            width: 100vw;
+            width: 100%;
             height: 3vw;
             border: none;
             color:white;
             font-size: 1.5vw;
+        }
+
+        a:link {color:#0000FF}		/* 未访问的链接 */
+        a:visited {color: #800080}	/* 已访问的链接 */
+        a:hover {color: #ff0000}	/* 鼠标移动到链接上 */
+        a:active {color: #ffffff}
+
+        .forget{
+            display: block;
+            width: 100%;
+            text-align: right;
+            right: 1vw;
         }
     </style>
 </head>
@@ -85,21 +106,20 @@
     <p class="register">注册</p>
 </div>
 <div>
-    <form>
+    <form class="form">
         <img  src="image/iphone.png">
         <input type="text" placeholder="请输入手机号"/></br>
     </form>
 </div>
 <div>
-    <form>
+    <form class="form">
         <img  src="image/locked.png">
         <input type="text" placeholder="请输入密码">
     </form>
 </div>
-
-
 <form>
-    <input class="submit" value="登录"/></form>
+    <input class="submit" type="submit" value="登录"/>
+    <a class="forget" href="www.baidu.com">忘记密码?</a>
 </form>
 </body>
 </html>
