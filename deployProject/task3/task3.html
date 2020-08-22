@@ -9,9 +9,6 @@
             margin: 0;
             padding: 0;
         }
-        div{
-            margin: 1vw 0;
-        }
         html {
             margin: 0;
             padding: 0;
@@ -19,12 +16,13 @@
         }
         .header {
             /*position: fixed;*/
-            height: 3vw;
+            width: 100%;
+            height: 50px;
             background: #68CDD5;
             display: -webkit-flex;
             justify-content: space-between;
             vertical-align: middle;
-            line-height: 3vw;
+            line-height: 50px;
         }
 
         .close {
@@ -52,35 +50,59 @@
             color: white;
             font-size: 1vw;
         }
-        .form {
-            background: #ffffff;
-            margin: 0;
-            padding: 1vw 0;
+        form{
+            position: relative;
+            width: 100%;
+            height: 136px;
         }
-        img {
-            margin: 0;
-            padding:0.1vw 2vw;
-            height: 2.2vw;
-            width: 1.4vw;
-            border-right : 0.1vw solid #b2b2b2;
+        form img:nth-of-type(1) {
+            position: absolute;
+            top: 7%;
+            margin: 8px 0;
+            padding:8px 16px;
+            height: 20px;
+            width: 14px;
+            border-right : 1px solid #b2b2b2;
             background: #ffffff;
-            vertical-align: middle;
         }
-        input {
-            margin: 0;
-            padding: 0 1vw;
-            height: 2.2vw;
-            width: 91.8%;
-            /*outline: none;*/
-            vertical-align: middle;
+        form input:nth-of-type(1) {
+            margin: 8px 0;
+            padding: 0 60px;
+            height: 52px;
+            width:100%;
+            line-height: 52px;
+            box-sizing: border-box;
+            outline: none;
             font-size: 1.2vw;
             border: none;
         }
+        form img:nth-of-type(2) {
+            position: absolute;
+            top: 56%;
+            margin: 8px 0;
+            padding:8px 16px;
+            height: 20px;
+            width: 14px;
+            border-right : 1px solid #b2b2b2;
+            background: #ffffff;
+        }
+        form input:nth-of-type(2) {
+            margin: 8px 0;
+            padding: 0 60px;
+            height: 52px;
+            width:100%;
+            line-height: 52px;
+            box-sizing: border-box;
+            outline: none;
+            font-size: 1.2vw;
+            border: none;
+        }
+
         .submit{
             background-color: #68CDD5;
             text-align: center;
             width: 100%;
-            height: 3vw;
+            height: 50px;
             border: none;
             color:white;
             font-size: 1.5vw;
@@ -105,21 +127,15 @@
     <p class="login">登录</p>
     <p class="register">注册</p>
 </div>
-<div>
-    <form class="form">
-        <img  src="image/iphone.png">
-        <input type="text" placeholder="请输入手机号"/></br>
-    </form>
-</div>
-<div>
-    <form class="form">
-        <img  src="image/locked.png">
-        <input type="text" placeholder="请输入密码">
-    </form>
-</div>
+<form class="form">
+    <img  src="image/iphone.png">
+    <input type="text" placeholder="请输入手机号"/></br>
+    <img  src="image/locked.png">
+    <input type="text" placeholder="请输入密码">
+</form>
 <form>
     <input class="submit" type="submit" value="登录"/>
-    <a class="forget" href="www.baidu.com">忘记密码?</a>
+    <a class="forget" href="www.baidu.com">忘记密码</a>
 </form>
 </body>
 </html>
